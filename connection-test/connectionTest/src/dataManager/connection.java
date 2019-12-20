@@ -6,30 +6,29 @@ public class connection {
     // JDBC driver name and database URL
 
     static final String JDBC_DRIVER = "org.mariadb.jdbc.Driver";
-    static final String DB_URL = "jdbc:mariadb://192.168.100.174/db";
+    static final String DB_URL = "jdbc:mariadb://192.168.1.128/gym";
 
     //  Database credentials
-    static final String USER = "pi";
+    static final String USER = "remote";
     static final String PASS = "bercy";
 
-    public static String select(String sql){
+    public static void select(String sql, String response){
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
 
         try {
             //STEP 2: Register JDBC driver
-            Class.forName("org.mariadb.jdbc.Driver");
+            Class.forName(JDBC_DRIVER);
 
             //STEP 3: Open a connection
             System.out.println("Connecting to a selected database...");
-            conn = DriverManager.getConnection(
-                    "jdbc:mariadb://192.168.100.174/db", USER, PASS);
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
             System.out.println("Connected database successfully...");
 
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
-            return rs.toString();
+            response= rs.toString();
         } catch (SQLException se) {
             //Handle errors for JDBC
             se.printStackTrace();
