@@ -28,6 +28,16 @@ This is the database designed for the app. Still a WIP.
 - Add google auth
 - Design de UI
 
+## Tools I use:
+
+- Android Studio
+- Eclipse
+- Figma
+- MariaDB 
+- PhpMyAdmin 
+- Raspbian
+- StackOverflow (of course)
+
 ### Usefull stuff
 
 - https://pandao.github.io/editor.md/en.html
