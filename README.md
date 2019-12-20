@@ -16,6 +16,10 @@
 - I use a Raspberry Pi 2B for the database with MariaDB
 - I'm using Figma for designing the UI and the Google GUI for Material Design
 
+## Database
+This is the database designed for the app. Still a WIP.
+![](https://github.com/sod1497/GYM/blob/master/documents/DB.PNG?raw=true)
+
 ## Next steps
 
 - Prepare a connection with the DB
