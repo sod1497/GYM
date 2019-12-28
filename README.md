@@ -2,9 +2,9 @@
 
 - New features comming soon
 
-### Changelog (dec-19)
+### Changelog (dec-24)
 
-- Design concept added
+- Started the internal DB for handling the app info offline
 
 # GYM
 
@@ -22,11 +22,12 @@ This is the database designed for the app. Still a WIP.
 
 ## Next steps
 
-- Prepare a connection with the DB
-- Add the logic to handle objects in the app
+- Prepare a connection with the DB [DONE]
+- Create an internal DB for handling the app information when offline [IN PROGRESS]
+- Add the logic to handle objects in the app [IN PROGRESS]
 - Add the logic to handle offline objects and have them synced when back online
 - Add google auth
-- Design de UI
+- Design de UI [IN PROGRESS]
 
 ## Tools I use:
 
